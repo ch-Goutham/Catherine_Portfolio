@@ -645,6 +645,13 @@ function App() {
 
       {/* Hero Section */}
       <main className="hero">
+        {/* Background abstract rings */}
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0 }}>
+          <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '600px', height: '600px', border: '1px solid #06254D', opacity: 0.2, borderRadius: '50%' }} />
+          <div style={{ position: 'absolute', top: '10%', left: '-20%', width: '800px', height: '800px', border: '1px solid #06254D', opacity: 0.2, borderRadius: '50%' }} />
+          <div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '600px', height: '600px', border: '1px solid #06254D', opacity: 0.2, borderRadius: '50%' }} />
+          <div style={{ position: 'absolute', top: '10%', right: '-20%', width: '800px', height: '800px', border: '1px solid #06254D', opacity: 0.2, borderRadius: '50%' }} />
+        </div>
         <div className="hero-container" style={{ perspective: '1000px' }}>
           <motion.div
             className="hero-left"
@@ -692,6 +699,7 @@ function App() {
           </div>
         </div>
       </main>
+
 
 
 
@@ -1062,6 +1070,42 @@ function App() {
                 <div className="pill-circle"><img src="/logos/Mabs.png" alt="Mabs" /></div>
                 <div className="pill-text">
                   <span>MABS</span>
+                  <div className="open-link">
+                    <span>Open Website →</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+            className="partner-logo-pill logo-ellipse-35"
+          >
+            <div className="center-card">
+              <div className="logo-pill-inner">
+                <div className="pill-circle"><img src="/logos/manfa.png" alt="Manfa" /></div>
+                <div className="pill-text">
+                  <span>Manfa</span>
+                  <div className="open-link">
+                    <span>Open Website →</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+            className="partner-logo-pill logo-ellipse-36"
+          >
+            <div className="center-card">
+              <div className="logo-pill-inner">
+                <div className="pill-circle"><img src="/logos/storaa.png" alt="Storaa" /></div>
+                <div className="pill-text">
+                  <span>Storaa</span>
                   <div className="open-link">
                     <span>Open Website →</span>
                   </div>

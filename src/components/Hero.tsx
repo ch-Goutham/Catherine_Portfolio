@@ -1,10 +1,16 @@
 import Image from "next/image";
-import Link from "next/link";
-import { FaInstagram, FaEnvelope, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 
 export default function Hero() {
   return (
     <section className="relative w-full bg-light-bg flex flex-col items-center overflow-hidden pb-0">
+
+      {/* Background abstract rings */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
+        <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] border border-[#06254D] opacity-20 rounded-full" />
+        <div className="absolute top-[10%] left-[-20%] w-[800px] h-[800px] border border-[#06254D] opacity-20 rounded-full" />
+        <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] border border-[#06254D] opacity-20 rounded-full" />
+        <div className="absolute top-[10%] right-[-20%] w-[800px] h-[800px] border border-[#06254D] opacity-20 rounded-full" />
+      </div>
 
       {/* Container */}
       {/* Container */}
@@ -13,7 +19,7 @@ export default function Hero() {
         {/* Left Content */}
         <div className="w-full lg:w-[55%] flex flex-col mt-8 lg:mt-0 relative z-20 pb-20 lg:pb-32 lg:pr-10">
           <p className="text-2xl md:text-[32px] font-medium text-black mb-4">
-            Hello! I’m <span className="font-bold text-deep-blue">Hepsibah Catherine</span>
+            Hello! I'm <span className="font-bold text-deep-blue">Hepsibah Catherine</span>
           </p>
 
           <h1 className="text-5xl md:text-7xl lg:text-[96px] font-extrabold text-deep-blue leading-[1.1] lg:leading-[110px] mb-8 drop-shadow-sm animate-fade-in-up delay-100 max-w-[900px] tracking-[-0.02em]">
@@ -43,14 +49,6 @@ export default function Hero() {
             />
           </div>
 
-          {/* Social Icons (Far Right) - Adjusted to stay clear of the larger image */}
-          <div className="hidden xl:flex flex-col gap-8 absolute right-[-100px] top-1/2 -translate-y-1/2 z-30">
-            {[FaInstagram, FaEnvelope, FaWhatsapp, FaLinkedinIn].map((Icon, i) => (
-              <Link key={i} href="#" className="text-deep-blue hover:scale-110 transition-transform duration-300">
-                <Icon size={24} />
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
 
