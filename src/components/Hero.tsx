@@ -38,7 +38,7 @@ export default function Hero() {
           <div className="absolute bottom-0 right-[20px] lg:right-[60px] w-[280px] lg:w-[400px] h-[450px] bg-deep-blue rounded-t-full shadow-2xl z-10" />
 
           {/* Portrait Image (Broken out) */}
-          <div className="absolute bottom-0 lg:bottom-0 right-0 lg:right-[-20px] w-[350px] lg:w-[579px] h-[610px] z-20 pointer-events-none">
+          <div className="absolute bottom-0 lg:bottom-0 right-[20px] lg:right-[0px] w-[350px] lg:w-[579px] h-[610px] z-20 pointer-events-none">
             <Image
               src="/catherine_portrait.png"
               alt="Hepsibah Catherine"
